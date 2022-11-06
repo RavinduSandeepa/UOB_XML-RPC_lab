@@ -1,4 +1,4 @@
-package Server;
+package ClientServer;
 import org.apache.xmlrpc.*;
 
 public class JavaServer { 

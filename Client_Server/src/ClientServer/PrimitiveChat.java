@@ -1,4 +1,4 @@
-package Server;
+package ClientServer;
 import javax.swing.*;
 
 public class PrimitiveChat {

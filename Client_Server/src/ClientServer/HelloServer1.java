@@ -1,10 +1,14 @@
-package Server;
-
+package ClientServer;
 import org.apache.xmlrpc.*;
 
-public class HelloServer { 
+public class HelloServer1 { 
+
  public String hello() {
-  return "Hello from Marc Conrad";
+  return "Hello RV";
+  }
+  
+  public String greet(String name){
+	  return "Hello Mr."+name;
   }
   
  public static void main (String [] args) {
@@ -12,7 +16,7 @@ public class HelloServer {
 	  uk.co.wilson.xml.MinML.xmlinfo = true;
 	 System.out.println("Starting Server..."); 
    WebServer server = new WebServer(80);
-   server.addHandler("sample", new HelloServer());
+   server.addHandler("test", new HelloServer());
    server.start();
   } catch (Exception exception) {
    System.err.println("JavaServer: " + exception);
