@@ -7,6 +7,7 @@ public class JavaServer {
   }
  public static void main (String [] args) {
   try {
+	  uk.co.wilson.xml.MinML.xmlinfo = true;//xml added
    WebServer server = new WebServer(80);
    server.addHandler("sample", new JavaServer());
    server.start();
