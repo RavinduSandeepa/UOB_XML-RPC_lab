@@ -1,4 +1,4 @@
-package ClientServer;
+package Server;
 
 import org.apache.xmlrpc.*;
 
